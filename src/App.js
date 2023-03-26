@@ -1,13 +1,23 @@
-
-import './App.css';
+// import { Routes, Route } from "react-router-dom";
+// import HorizontalScroll from "./components/HorizontalScroll";
+import Header from "./components/Header";
+import MainPage from "./components/MainPage";
+import './scss/Style.scss';
 
 function App() {
+  // const scrollRef = HorizontalScroll();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <>
+      {/* <div className="wrap" ref={scrollRef}> */}
+      <div className="wrap">
+        <Header />
+        <MainPage />
+        {/* <Routes>
+
+        </Routes> */}
+      </div>
+    </>
   );
 }
 

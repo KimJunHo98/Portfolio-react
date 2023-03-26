@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.header {
+  height: 100vh;
+  display: flex;
+}
+.header .main_profil {
+  width: 700px;
+  height: 85vh;
+  background-color: #eee;
+}
+.header .main_profil span {
+  background-image: url("../../public/images/main.jpg") no-repeat;
+  background-size: cover;
+}
+.header .gnb {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+.header .gnb .main_logo {
+  margin-top: 40px;
+}
+.header .gnb .main_logo h2 {
+  padding-right: 50px;
+  transform: rotate(-90deg);
+}
+.header .gnb .gnb_link_list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-family: "Roboto", serif;
+}
+.header .gnb .gnb_link_list li span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transform: rotate(-90deg);
+  padding: 50px 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+}/*# sourceMappingURL=header.css.map */

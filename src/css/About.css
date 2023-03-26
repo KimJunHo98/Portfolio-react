@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-left: 300px;
+}
+.about .about_tit {
+  padding-top: 60px;
+}
+.about .about_tit .title {
+  font-size: 30rem;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  letter-spacing: -10px;
+  white-space: nowrap;
+  line-height: 0.9;
+}
+.about .about_tit .tit2 {
+  margin-left: 300px;
+}
+.about .about_tit .tit3 {
+  margin-left: 200px;
+}
+.about .profil {
+  width: 700px;
+  height: 100vh;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+.about .profil img {
+  width: 100%;
+}/*# sourceMappingURL=About.css.map */
