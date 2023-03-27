@@ -5,17 +5,10 @@
 .header {
     height: 100vh;
     display: flex;
-
-    .main_profil {
-        width: 700px;
-        height: 85vh;
-        background-color: #eee;
-
-        span {
-            background-image: url("../../public/images/main.jpg") no-repeat;
-            background-size: cover;
-        }
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
 
     .gnb {
         // width: 20vh;
@@ -30,7 +23,7 @@
         .main_logo { 
             margin-top: 40px;
 
-            h2 {
+            .logo {
                 padding-right: 50px;
                 transform: rotate(-90deg); 
             }

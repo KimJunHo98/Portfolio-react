@@ -11,7 +11,7 @@ const About = () => {
                                 <h2 className="title tit3">DEVELOPER</h2>
                             </div>
                             <div className="profil">
-                                <img src="../../public/images/main.jpg" alt="" />
+                                <img src="../images/main.jpg" alt="" />
                             </div>
                         </div>
                     </div>

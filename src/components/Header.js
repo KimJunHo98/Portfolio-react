@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import "../scss/Style.scss";
 
 const Header = () => {
     return(
@@ -9,10 +8,9 @@ const Header = () => {
                 <div className="container">
                     <div className="inner">
                         <div className="header">
-                            <h1 className="main_profil"><span></span></h1>
                             <nav className="gnb">
                                 <div className="main_logo">
-                                    <h2>Logo</h2>
+                                    <h1 className="logo">Logo</h1>
                                 </div>
                                 <ul className="gnb_link_list">
                                     <li><span>HOME</span></li>
