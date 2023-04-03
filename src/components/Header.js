@@ -10,7 +10,7 @@ const Header = () => {
                         <div className="header">
                             <nav className="gnb">
                                 <div className="main_logo">
-                                    <h1 className="logo">Logo</h1>
+                                    <h1 className="logo"><img src="../images/chatgpt-logo.png" alt="메인로고" /></h1>
                                 </div>
                                 <ul className="gnb_link_list">
                                     <li><span>HOME</span></li>

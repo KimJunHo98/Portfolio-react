@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @import "./Variable";
 
 .about {
@@ -14,13 +20,10 @@
         .title {
             font-size: $fs_11;
             font-weight: 300;
-            font-family: "Roboto", serif;
+            font-family: "Noto Sans KR", serif;
             letter-spacing: -10px;
             white-space: nowrap;
             line-height: .9;
-        }
-        .tit2 {
-            margin-left: 300px;
         }
         .tit3 {
             margin-left: 200px;
