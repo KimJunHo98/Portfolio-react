@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "./Variable";
+
+#footer {
+    width: 100%;
+    border-top: 2px solid #333;
+
+    .footer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .copy {
+            margin: 0 auto;
+            text-align: left;
+            font-size: $fs_1;
+        }
+        .footer_link_wrap {
+            .footer_link {
+                margin-left: 30px;
+                text-decoration: underline;
+                background-color: transparent;
+                font-size: $fs_1;
+                cursor: pointer;
+            }
+        }
+    }
+}

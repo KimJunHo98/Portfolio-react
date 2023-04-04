@@ -5,8 +5,8 @@ const About = () => {
                 <div className="container">
                     <div className="inner">
                         <div className="about">
-                            <div class="about_tit">
-                                <h2 className="title tit1">인간지능 JPT</h2>
+                            <div className="about_tit">
+                                <h2 className="title tit1">Chat GPT처럼 </h2>
                                 <h2 className="title tit3">김준호입니다</h2>
                             </div>
                             <div className="profil">

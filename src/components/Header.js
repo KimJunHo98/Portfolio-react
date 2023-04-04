@@ -5,22 +5,21 @@ const Header = () => {
     return(
         <>
             <header id="header">
-                <div className="container">
-                    <div className="inner">
-                        <div className="header">
-                            <nav className="gnb">
-                                <div className="main_logo">
-                                    <h1 className="logo"><img src="../images/chatgpt-logo.png" alt="메인로고" /></h1>
-                                </div>
-                                <ul className="gnb_link_list">
-                                    <li><span>HOME</span></li>
-                                    <li><span>ABOUT ME</span></li>
-                                    <li><span>SKILLS</span></li>
-                                    <li><span>PROJECTS</span></li>
-                                    <li><span>CONTACT</span></li>
-                                </ul>
-                            </nav>
-                        </div>
+                <div className="inner">
+                    <div className="header">
+                        <h1 className="main_logo">
+                            {/* <img src="../images/chatgpt-logo.png" alt="메인로고" /> */}
+                        </h1>
+                        <nav className="gnb">
+                            <ul className="gnb_link_list">
+                                <li className="link_item active"><span>HOME</span></li>
+                                <li className="link_item"><span>ABOUT ME</span></li>
+                                <li className="link_item"><span>SKILLS</span></li>
+                                <li className="link_item"><span>PROJECTS</span></li>
+                                <li className="link_item"><span>CONTACT</span></li>
+                            </ul>
+                        </nav>
+                        <p className="pf">PORTFOLIO</p>
                     </div>
                 </div>
             </header>
