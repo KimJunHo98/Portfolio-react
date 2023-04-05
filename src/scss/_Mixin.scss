@@ -5,3 +5,9 @@
     font-size: $fontSize;
     font-weight: $fontWeight;
 }
+
+// text
+@mixin text($textAlign, $textTransform) {
+    text-align: $textAlign;
+    text-transform: $textTransform;
+}

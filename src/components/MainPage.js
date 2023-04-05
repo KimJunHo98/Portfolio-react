@@ -1,12 +1,11 @@
 import React from "react";
-// import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 
 // gsap
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
     return(
@@ -18,9 +17,8 @@ const About = () => {
                         <div className="about1">
                             <div className="about_visual">
                                 <div className="about_slog">
-                                    <h2 className="slog slog1">인공지능처럼 코드를 연결하고</h2>
-                                    <h2 className="slog slog3">쉽게 정보를 공유하는</h2>
-                                    <h2 className="slog slog2">김준호입니다</h2>
+                                    <h2 className="slog slog1">인공지능처럼 코드를</h2>
+                                    <h2 className="slog slog2">연결하는 김준호입니다</h2>
                                     {/* <div className="bg-img1">
                                         <img src="../images/bg-img1.png" alt="" />
                                     </div> */}
@@ -39,7 +37,30 @@ const About = () => {
                     <div className="inner">
                         <div className="about2">
                             <div className="about_title">
-                                <h3 className="tit">about <br />me</h3>
+                                <div class="tit_top">
+                                    <div class="track">
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                    </div>
+                                </div>
+                                <div class="tit_bottom">
+                                    <div class="track">
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                        <h3 className="tit">about me</h3>
+                                    </div>
+                                </div>
                             </div>
                             <p className="about_desc">
                                 안녕하세요, 신입 프론트엔드 개발자 김준호입니다. 프론트엔드의
@@ -70,7 +91,7 @@ const Skill = () => {
                             <div className="skill_title">
                                 <h3 className="tit">skills</h3>
                             </div>
-                            <p className="skill_prog">
+                            <p className="skill_progress">
 
                             </p>
                         </div>
@@ -82,9 +103,32 @@ const Skill = () => {
 }
 
 const Projects = () => {
+    const component = useRef();
+    const slider = useRef();
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            let horItems = gsap.utils.toArray(".hor_item");
+            gsap.to(horItems, {
+                xPercent: -100 * (horItems.length - 1),
+                ease: "",
+                scrollTrigger: {
+                    trigger: slider.current,
+                    pin: true,
+                    scrub: 1,
+                    smooth: true,
+                    start: 'top 12%',
+                    end: () => "+=" + slider.current.offsetWidth,
+                    markers: false
+                }
+            });
+        }, component);
+        return () => ctx.revert();
+    });
+
     return(
         <>
-            <section id="projects">
+            <section id="projects" ref={component}>
                 <h2 className="ir_so">프로젝트</h2>
                 <div className="container">
                     <div className="inner">
@@ -92,22 +136,30 @@ const Projects = () => {
                             <div className="projects_title">
                                 <h3 className="tit">projects</h3>
                             </div>
-                            <div className="hor_wrap">
+                            <div className="hor_wrap" ref={slider}>
                                 <div className="hor_item">
-                                    <div className=""></div>
-                                    <div className=""></div>
+                                    <div className="hor_item_left"></div>
+                                    <div className="hor_item_right">
+                                        <h3 className="site_num">site 1</h3>
+                                    </div>
                                 </div>
                                 <div className="hor_item">
-                                    <div className=""></div>
-                                    <div className=""></div>
+                                    <div className="hor_item_left"></div>
+                                    <div className="hor_item_right">
+                                        <h3 className="site_num">site 2</h3>
+                                    </div>
                                 </div>
                                 <div className="hor_item">
-                                    <div className=""></div>
-                                    <div className=""></div>
+                                    <div className="hor_item_left"></div>
+                                    <div className="hor_item_right">
+                                        <h3 className="site_num">site 3</h3>
+                                    </div>
                                 </div>
                                 <div className="hor_item">
-                                    <div className=""></div>
-                                    <div className=""></div>
+                                    <div className="hor_item_left"></div>
+                                    <div className="hor_item_right">
+                                        <h3 className="site_num">site 4</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +178,12 @@ const Contact = () => {
                 <div className="container">
                     <div className="inner">
                         <div className="contact">
-                            
+                            <div className="contact_title">
+                                <h3 className="tit">contact me</h3>
+                            </div>
+                            <div className="contact_desc">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
