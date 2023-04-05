@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+// font
+@mixin fontSizeWeight($fontSize, $fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}

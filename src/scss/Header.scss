@@ -6,9 +6,9 @@
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
     border-bottom: 2px solid #333;
-    z-index: 1;
+    z-index: 999;
 
     .header {
         width: 100%;
@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: $ffN;
 
         .main_logo { 
             width: 5%;
@@ -39,21 +40,41 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-family: "Roboto", serif;
                 
                 .link_item { 
+                    width: 200px;
                     height: 100%;
-                    padding: 0 60px; 
+                    position: relative;
                     line-height: 68px;
-                    // border-left: 1px solid #aaa;
-                    // &:last-child { border-right: 1px solid #aaa; }
                     
-                    span {
+                    &:before, &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 0%;
+                        transition: all .4s ease-out;
+                        background-color: #333;
+                        z-index: -1;
+                    }
+                    &:before { top: 0; }
+                    &:after { bottom: 0; }
+                    &:hover:before,  &:hover:after {
+                        width: 100%;
+                        height: 50%;
+                    }
+                    &:hover a {
+                        color: #fff;
+                        transition: all .4s ease-out;
+                    }
+                    
+                    a {
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        font-weight: 500;
-                        font-size: $fs_3;
+                        text-align: center;
+                        color: $text;
+                        @include fontSizeWeight($fs_3, 700);
                     }
                 }
 

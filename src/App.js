@@ -1,6 +1,6 @@
-// import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import React from "react";
 import MainPage from "./components/MainPage";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './scss/Style.scss';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="wrap">
-        <Header />
+        <Header/>
         <MainPage />
         <Footer />
       </div>

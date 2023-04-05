@@ -3,7 +3,7 @@
 
 /* 여백 초기화 */
 * { margin: 0; padding: 0; box-sizing: border-box; word-break: keep-all; }
-// .container { width: 100%; max-width: 1440px; margin: 0 auto; }
+.container { width: 100%; margin: 0 auto; }
 .inner { padding: $inner; }
 
 /* 스크롤 초기화 */
@@ -12,7 +12,7 @@ body { overflow-x: hidden; }
 /* 폰트 초기화 */
 html { font-size: 62.5%; /* 1rem = 10px */ }
 body, input, textarea, select, button, table { 
-    font-family: "Noto Sans KR", "Roboto", sans-serif; color: $text; line-height: 1.618; 
+    font-family: $ffN, $ffC, sans-serif; color: $text; line-height: 1.618; 
 }
 
 /* 제목태그 초기화 */

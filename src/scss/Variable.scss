@@ -1,5 +1,14 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import "./Mixin";
+// 웹폰트 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // font-size
 $fs_1: 1.4rem;
@@ -13,6 +22,10 @@ $fs_8: 2.8rem;
 $fs_9: 3rem;
 $fs_10: 6rem;
 $fs_11: 12rem;
+
+// font-family
+$ffN: 'Nanum Myeongjo', serif;
+$ffC: 'Chosunilbo_myungjo', serif;
 
 // color
 $background: #ffffff;

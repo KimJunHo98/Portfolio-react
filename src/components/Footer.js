@@ -1,5 +1,4 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
     const url1 = "https://github.com/KimJunHo98";
@@ -8,6 +7,7 @@ const Footer = () => {
     return(
         <>
             <footer id="footer">
+                <h2 className="ir_so">푸터</h2>
                 <div className="inner">
                     <div className="footer">
                         <p className="copy">&copy; KimJunHo</p>
