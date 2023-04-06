@@ -1,13 +1,29 @@
 import React from "react";
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, useEffect } from 'react';
 
 // gsap
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const About = () => {
+    const gptRef = useRef(null);
+    const jptRef = useRef(null);
+
+    useEffect(() => {
+        const gpt = gptRef.current;
+        const jpt = jptRef.current;
+
+        const tl = gsap.timeline({ repeat: -1 });
+
+        tl.to(gpt, { duration: 1.3, text: "GPT", split: "chars", ease: "Linear.easeNone" })
+        .to(gpt, { duration: 1.1, text: "", split: "", ease: "Linear.easeNone" })
+        .to(jpt, { duration: 1.3, text: "JPT", split: "chars", ease: "Linear.easeNone" })
+        .to(jpt, { duration: 1.1, text: "", split: "", ease: "Linear.easeNone" });
+    }, []);
+
     return(
         <>
             <section id="about1">
@@ -17,14 +33,16 @@ const About = () => {
                         <div className="about1">
                             <div className="about_visual">
                                 <div className="about_slog">
-                                    <h2 className="slog slog1">인공지능처럼 코드를</h2>
-                                    <h2 className="slog slog2">연결하는 김준호입니다</h2>
+                                    <h2 className="slog slog1">끊임없이 배우고 발전하는</h2>
+                                    <p className="slog slog2" ref={gptRef}></p>
+                                    <p className="slog slog3" ref={jptRef}></p>
+                                    <p className="slog slog4">가 되고싶은 김준호입니다</p>
                                     {/* <div className="bg-img1">
                                         <img src="../images/bg-img1.png" alt="" />
                                     </div> */}
                                 </div>
                                 <div className="profil">
-                                    {/* <img src="../images/main.png" alt="" /> */}
+                                    <img src="../images/main.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -37,40 +55,13 @@ const About = () => {
                     <div className="inner">
                         <div className="about2">
                             <div className="about_title">
-                                <div class="tit_top">
-                                    <div class="track">
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                    </div>
-                                </div>
-                                <div class="tit_bottom">
-                                    <div class="track">
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                        <h3 className="tit">about me</h3>
-                                    </div>
-                                </div>
+                                <h3 className="tit">about me</h3>
                             </div>
                             <p className="about_desc">
-                                안녕하세요, 신입 프론트엔드 개발자 김준호입니다. 프론트엔드의
-                                매력은 상상하는 것을 실현하는 것이라고 생각합니다. 자기가 상상
-                                한것을 실현시키기 위해서는 많은 노력과 실력이 밑바탕이 되어야
-                                한다고 생각합니다. 그런 부분에서, 저는 아직 많이 배워야하고, 훨
-                                씬 더 많은 노력을 해야한다는 것을 알고 있습니다. 하지만 제가 어
-                                려움을 극복하고 한계를 극복했을 때의 성취감은 제가 이 길로 가
-                                고 싶은 대답이라고 생각합니다. 앞으로 항상 배우고 발전하는 프론
-                                트엔드 개발자가 되겠습니다.
+                                안녕하세요, 신입 프론트엔드 개발자 김준호입니다. 프론트엔드의매력은 상상하는 것을 실현하는 것이라고 생각합니다. 자기가 상상
+                                한것을 실현시키기 위해서는 많은 노력과 실력이 밑바탕이 되어야 한다고 생각합니다. 그런 부분에서, 저는 아직 많이 배워야하고, 훨
+                                씬 더 많은 노력을 해야한다는 것을 알고 있습니다. 하지만 제가 어려움을 극복하고 한계를 극복했을 때의 성취감은 제가 이 길로 가
+                                고 싶은 대답이라고 생각합니다. 앞으로 항상 배우고 발전하는 프론트엔드 개발자가 되겠습니다.
                             </p>
                         </div>
                     </div>
@@ -111,7 +102,7 @@ const Projects = () => {
             let horItems = gsap.utils.toArray(".hor_item");
             gsap.to(horItems, {
                 xPercent: -100 * (horItems.length - 1),
-                ease: "",
+                ease: "none",
                 scrollTrigger: {
                     trigger: slider.current,
                     pin: true,
