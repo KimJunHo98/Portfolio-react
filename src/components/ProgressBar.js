@@ -19,7 +19,7 @@ const ProgressBar = () => {
         };
     }, []);
 
-    return <div className="progress_bar" style={{ width: `${width}%` }} />;
+    return <div id="progress_bar" className="progress_bar" style={{ width: `${width}%` }} />;
 };
 
 export default ProgressBar;

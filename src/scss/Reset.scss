@@ -12,14 +12,14 @@ body { overflow-x: hidden; }
 /* 폰트 초기화 */
 html { font-size: 62.5%; /* 1rem = 10px */ }
 body, input, textarea, select, button, table { 
-    font-family: $ffN, $ffC, sans-serif; color: $text; line-height: 1.618; 
+    font-family: $ffN, $ffC, sans-serif; color: $prim; line-height: 1.618; 
 }
 
 /* 제목태그 초기화 */
-h1, h2, h3, h4, h5, h6 { font-size: 1.4rem; color: $text; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { font-size: 1.4rem; color: $prim; font-weight: normal; }
 
 /* a 링크 초기화 */
-a { text-decoration: none; color: $text; }
+a { text-decoration: none; color: $prim; }
 a:hover { color: #111; } 
 
 /* 블릿기호 초기화 */

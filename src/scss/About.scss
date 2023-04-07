@@ -63,7 +63,7 @@
             }
             .slog5 {
                 span {
-                    border-bottom: 2px solid #333;
+                    border-bottom: 2px solid $prim;
                 }
             } 
         }
@@ -86,8 +86,8 @@
 
 #about2 {
     width: 100%;
-    border-top: 2px solid #333;
-    border-bottom: 2px solid #333;
+    border-top: 2px solid $prim;
+    border-bottom: 2px solid $prim;
 
     .inner {
         padding-left: 0;
@@ -106,7 +106,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-right: 2px solid #333;
+            border-right: 2px solid $prim;
 
             .tit {
                 line-height: 1;
