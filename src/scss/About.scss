@@ -17,7 +17,7 @@
         }
         .about_slog {      
             width: 60%;
-            height: 30%;
+            height: 40%;
             position: relative;
             padding-left: 30px;
 
@@ -25,45 +25,47 @@
                 @include fontSizeWeight(7rem, 400);
                 font-family: $ffC;
             }
-            .slog2, .slog3 {
-                position: relative;
-                display: inline-block;
-                @include fontSizeWeight(9rem, 700);
-                font-family: $ffN;
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    right: -10px;
-                    top: 50%;
-                    width: 3px;
-                    height: 60%;
-                    display: block;
-                    transform: translateY(-50%);
-                    background-color: #000;
-                    animation: cursor .5s steps(2, end) infinite;
-                }
-                @keyframes cursor {
-                    0% {
-                        opacity: 0;
+            .split_slog {
+                position: absolute;
+                top: 100px;
+                left: 30px;
+                
+                .slog2, .slog3 {
+                    position: relative;
+                    display: inline-block;
+                    @include fontSizeWeight(9rem, 700);
+                    font-family: $ffN;
+    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: -10px;
+                        top: 50%;
+                        width: 3px;
+                        height: 60%;
+                        display: block;
+                        transform: translateY(-50%);
+                        background-color: #000;
+                        animation: cursor .5s steps(2, end) infinite;
                     }
-                    100% {
-                        opacity: 1;
+                    @keyframes cursor {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
                     }
                 }
-            }
-            .slog3 {
-                padding-left: 20px;
             }
             .slog4 {
-                position: absolute;
-                top: 54%;
-                left: 230px;
-
+                padding-left: 200px;
+            }
+            .slog5 {
                 span {
                     border-bottom: 2px solid #333;
                 }
-            }
+            } 
         }
         .profil {
             width: 40%;

@@ -34,12 +34,14 @@ const About = () => {
                             <div className="about_visual">
                                 <div className="about_slog">
                                     <h2 className="slog slog1">끊임없이 배우고 발전하는</h2>
-                                    <p className="slog slog2" ref={gptRef}></p>
-                                    <p className="slog slog3" ref={jptRef}></p>
-                                    <p className="slog slog4">가 되고싶은 <span>김준호</span>입니다</p>
-                                    {/* <div className="bg-img1">
-                                        <img src="../images/bg-img1.png" alt="" />
-                                    </div> */}
+                                    <div className="split_slog">
+                                        <p className="slog slog2" ref={gptRef}></p>
+                                        <p className="slog slog3" ref={jptRef}></p>
+                                    </div>
+                                    <p className="slog slog4">가 되고싶은</p>
+                                    <p className="slog slog5">
+                                        <span>김준호</span>입니다
+                                    </p>
                                 </div>
                                 <div className="profil">
                                     {/* <img src="../images/main.png" alt="" /> */}

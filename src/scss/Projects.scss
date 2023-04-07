@@ -64,6 +64,7 @@
                         }
                         .site_btns {
                             width: 30%;
+                            padding-top: 5px;
 
                             .site_link_btn {
                                 padding: 6px 20px;
@@ -93,7 +94,7 @@
                             height: 80%;
                             align-self: flex-end;
                             background: url("../images/site1-pc.jpg") no-repeat center center;
-                            background-size: cover;
+                            background-size: 130% 100%;
 
                             &::before {
                                 content: "";

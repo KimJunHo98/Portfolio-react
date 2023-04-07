@@ -1,9 +1,11 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import ProgressBar from "./ProgressBar";
 
 const Header = () => {
     return(
         <>
+            <ProgressBar />
             <header id="header">
                 <div className="inner">
                     <div className="header">
