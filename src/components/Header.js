@@ -8,7 +8,8 @@ const Header = () => {
                 <div className="inner">
                     <div className="header">
                         <h1 className="main_logo">
-                            <img src="../images/chatgpt-logo.png" alt="메인로고" />
+                            KimJunHo
+                            {/* <img src="../images/chatgpt-logo.png" alt="메인로고" /> */}
                         </h1>
                         <nav className="gnb">
                             <ul className="gnb_link_list">

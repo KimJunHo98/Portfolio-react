@@ -1,5 +1,5 @@
 import React from "react";
-import { useLayoutEffect, useRef, useEffect } from 'react';
+import { useLayoutEffect, useRef, useEffect } from "react";
 
 // gsap
 import { gsap } from "gsap";
@@ -18,10 +18,10 @@ const About = () => {
 
         const tl = gsap.timeline({ repeat: -1 });
 
-        tl.to(gpt, { duration: 1.3, text: "GPT", split: "chars", ease: "Linear.easeNone" })
-        .to(gpt, { duration: 1.1, text: "", split: "", ease: "Linear.easeNone" })
-        .to(jpt, { duration: 1.3, text: "JPT", split: "chars", ease: "Linear.easeNone" })
-        .to(jpt, { duration: 1.1, text: "", split: "", ease: "Linear.easeNone" });
+        tl.to(gpt, { duration: 1.3, text: "GPT", ease: "Linear.easeNone" })
+        .to(gpt, { duration: 1.1, text: "", ease: "Linear.easeNone" })
+        .to(jpt, { duration: 1.3, text: "JPT", ease: "Linear.easeNone" })
+        .to(jpt, { duration: 1.1, text: "", ease: "Linear.easeNone" });
     }, []);
 
     return(
@@ -36,13 +36,13 @@ const About = () => {
                                     <h2 className="slog slog1">끊임없이 배우고 발전하는</h2>
                                     <p className="slog slog2" ref={gptRef}></p>
                                     <p className="slog slog3" ref={jptRef}></p>
-                                    <p className="slog slog4">가 되고싶은 김준호입니다</p>
+                                    <p className="slog slog4">가 되고싶은 <span>김준호</span>입니다</p>
                                     {/* <div className="bg-img1">
                                         <img src="../images/bg-img1.png" alt="" />
                                     </div> */}
                                 </div>
                                 <div className="profil">
-                                    <img src="../images/main.png" alt="" />
+                                    {/* <img src="../images/main.png" alt="" /> */}
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,12 @@ const About = () => {
                 </div>
             </section>
             <section id="about2">
-                <h2 className="ir_so">about me</h2>
+                <h2 className="ir_so">자기소개</h2>
                 <div className="container">
                     <div className="inner">
                         <div className="about2">
                             <div className="about_title">
-                                <h3 className="tit">about me</h3>
+                                <h2 className="tit">about me</h2>
                             </div>
                             <p className="about_desc">
                                 안녕하세요, 신입 프론트엔드 개발자 김준호입니다. 프론트엔드의매력은 상상하는 것을 실현하는 것이라고 생각합니다. 자기가 상상
@@ -80,7 +80,7 @@ const Skill = () => {
                     <div className="inner">
                         <div className="skill">
                             <div className="skill_title">
-                                <h3 className="tit">skills</h3>
+                                <h2 className="tit">skills</h2>
                             </div>
                             <p className="skill_progress">
 
@@ -94,14 +94,16 @@ const Skill = () => {
 }
 
 const Projects = () => {
+    const url1 = "https://github.com/KimJunHo98";
+
     const component = useRef();
     const slider = useRef();
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            let horItems = gsap.utils.toArray(".hor_item");
+            let horItems = gsap.utils.toArray(".hor_item_slide");
             gsap.to(horItems, {
-                xPercent: -100 * (horItems.length - 1),
+                xPercent: -100 * (horItems.length - 1.8),
                 ease: "none",
                 scrollTrigger: {
                     trigger: slider.current,
@@ -125,31 +127,93 @@ const Projects = () => {
                     <div className="inner">
                         <div className="projects">
                             <div className="projects_title">
-                                <h3 className="tit">projects</h3>
+                                <h2 className="tit">projects</h2>
                             </div>
                             <div className="hor_wrap" ref={slider}>
-                                <div className="hor_item">
-                                    <div className="hor_item_left"></div>
-                                    <div className="hor_item_right">
-                                        <h3 className="site_num">site 1</h3>
+                                <div className="hor_item_slide slide1">
+                                    <div className="hor_item">
+                                        <h3 className="site_tit">경기생활문화센터</h3>
+                                        <div className="hor_item_top">
+                                            <p className="site_desc">
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                            </p>
+                                            <div className="site_btns">
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                            </div>
+                                        </div>
+                                        <div className="hor_item_bottom">
+                                            <div className="img_box img1"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="hor_item">
-                                    <div className="hor_item_left"></div>
-                                    <div className="hor_item_right">
-                                        <h3 className="site_num">site 2</h3>
+                                <div className="hor_item_slide slide2">
+                                    <div className="hor_item">
+                                        <h3 className="site_tit">site.02</h3>
+                                        <div className="hor_item_top">
+                                            <p className="site_desc">
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                            </p>
+                                            <div className="site_btns">
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                            </div>
+                                        </div>
+                                        <div className="hor_item_bottom">
+                                            <div className="img_box img1"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="hor_item">
-                                    <div className="hor_item_left"></div>
-                                    <div className="hor_item_right">
-                                        <h3 className="site_num">site 3</h3>
+                                <div className="hor_item_slide slide3">
+                                    <div className="hor_item">
+                                        <h3 className="site_tit">site.03</h3>
+                                        <div className="hor_item_top">
+                                            <p className="site_desc">
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                            </p>
+                                            <div className="site_btns">
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                            </div>
+                                        </div>
+                                        <div className="hor_item_bottom">
+                                            <div className="img_box img1"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="hor_item">
-                                    <div className="hor_item_left"></div>
-                                    <div className="hor_item_right">
-                                        <h3 className="site_num">site 4</h3>
+                                <div className="hor_item_slide slide4">
+                                    <div className="hor_item">
+                                        <h3 className="site_tit">site.04</h3>
+                                        <div className="hor_item_top">
+                                            <p className="site_desc">
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                            </p>
+                                            <div className="site_btns">
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                            </div>
+                                        </div>
+                                        <div className="hor_item_bottom">
+                                            <div className="img_box img1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="hor_item_slide slide5">
+                                    <div className="hor_item">
+                                        <h3 className="site_tit">site.05</h3>
+                                        <div className="hor_item_top">
+                                            <p className="site_desc">
+                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                            </p>
+                                            <div className="site_btns">
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                            </div>
+                                        </div>
+                                        <div className="hor_item_bottom">
+                                            <div className="img_box img1"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
