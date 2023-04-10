@@ -3,6 +3,7 @@
 
 #contact {
     width: 100%;
+    background-color: $prim;
     
     .contact {
         width: 100%;
@@ -13,6 +14,7 @@
             height: 100%;
 
             .tit {
+                color: #fff;
                 text-align: center;
                 text-transform: uppercase;
                 @include fontSizeWeight($fs_11, 400);

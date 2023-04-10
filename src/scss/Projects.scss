@@ -56,10 +56,10 @@
                         flex-direction: column;
 
                         .site_desc {
-                            margin-bottom: 10px;
+                            margin-bottom: 30px;
                             line-height: 1.618;
                             font-family: $ffC;
-                            @include fontSizeWeight($fs_6, 400);
+                            @include fontSizeWeight($fs_4, 400);
                             word-break: normal;
                         }
                         .site_btns {
@@ -74,6 +74,7 @@
                                 background-color: transparent;
                                 @include fontSizeWeight($fs_4, 400);
                                 cursor: pointer;
+                                transition: all .3s ease-in;
 
                                 &:first-child {
                                     margin-left: 0;
@@ -81,8 +82,8 @@
                                 &:before, &:after {
                                     content: '';
                                     position: absolute;
-                                    left: 0;
-                                    top: 0;
+                                    left: -1px;
+                                    top: -1px;
                                     width: 100%;
                                     height: 100%;
                                     border: 1px solid $prim;
@@ -96,6 +97,9 @@
                                 }
                                 
                                 &:hover {
+                                    background-color: $prim;
+                                    color: #fff;
+
                                     &:before, &:after {
                                         transform: translateX(0) translateY(0);
                                     }
