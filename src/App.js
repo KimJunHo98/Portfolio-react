@@ -2,6 +2,7 @@ import React from "react";
 import MainPage from "./components/MainPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Pointer from "./components/Pointer";
 import './scss/Style.scss';
 
 // gsap
@@ -25,6 +26,7 @@ function App() {
     <>
       {/* <progress id="progress" max="100" value="0"></progress> */}
       <div id="wrap" className="wrap">
+        <Pointer />
         <Header/>
         <MainPage />
         <Footer />

@@ -10,12 +10,12 @@
         height: 60px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         font-family: $ffN;
 
         .copy {
-            margin: 0 auto;
-            text-align: left;
+            width: 80%;
+            text-align: center;
             font-size: $fs_1;
         }
         .footer_link_wrap {
