@@ -49,32 +49,47 @@
                     .site_tit {
                         font-family: $ffC;
                         @include text(left, uppercase);
-                        @include fontSizeWeight($fs_10, 400);
+                        @include fontSizeWeight(5rem, 400);
+
+                        span {
+                            @include fontSizeWeight(4.6rem, 400);
+                        }
                     }
                     .hor_item_top {
                         display: flex;
                         flex-direction: column;
 
                         .site_desc {
+                            width: 90%;
                             margin-bottom: 30px;
                             line-height: 1.618;
-                            font-family: $ffC;
-                            @include fontSizeWeight($fs_4, 400);
+                            font-family: $ffPR;
+                            @include fontSizeWeight($fs_3, 300);
                             word-break: normal;
+
+                            p span {
+                                width: 100px;
+                                display: inline-block;
+                                @include fontSizeWeight($fs_3, 300);
+                            }
                         }
                         .site_btns {
                             padding-top: 5px;
-                            font-family: $ffN;
 
                             .site_link_btn {
+                                width: 120px;
                                 position: relative;
-                                padding: 6px 20px;
+                                padding: 6px 0;
                                 margin-left: 20px;
                                 color: $prim;
                                 background-color: transparent;
-                                @include fontSizeWeight($fs_4, 400);
-                                cursor: pointer;
+                                font-family: $ffN;
+                                @include fontSizeWeight($fs_4, 700);
                                 transition: all .3s ease-in;
+
+                                span {
+                                    padding-left: 10px;
+                                }
 
                                 &:first-child {
                                     margin-left: 0;
@@ -115,14 +130,11 @@
                         .img_box {
                             background-color: #ccc;
                             position: relative;
-                        }
-                        .img1 {
                             width: 70%;
                             height: 80%;
                             align-self: flex-end;
-                            background: url("../images/site1-pc.jpg") no-repeat center center;
                             background-size: 130% 100%;
-
+        
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -132,7 +144,6 @@
                                 height: 100%;
                                 background-color:rgba(0,0,0,.02);
                             }
-                            
                             img {
                                 width: 100%;
                                 height: 100%;
@@ -142,6 +153,13 @@
                     }
                 }
                 
+            }
+            .slide1 {
+                .hor_item_bottom {
+                    .img_box {
+                        background: url("../images/site1-pc.jpg") no-repeat center center;
+                    }
+                }
             }
         }
     }

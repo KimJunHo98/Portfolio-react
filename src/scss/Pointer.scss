@@ -1,0 +1,26 @@
+.cursor {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: $prim;
+    opacity: 0.7;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999;
+}
+.cursor_follower {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: $prim;
+    opacity: 0.4;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+    z-index: 9999;
+}

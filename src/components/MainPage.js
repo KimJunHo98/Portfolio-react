@@ -1,5 +1,8 @@
 import React from "react";
 import { useLayoutEffect, useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // gsap
 import { gsap } from "gsap";
@@ -96,7 +99,19 @@ const Skill = () => {
 }
 
 const Projects = () => {
-    const url1 = "https://github.com/KimJunHo98";
+    const btnLink = [
+        {
+            url1: "https://kimjunho98.github.io/project1/",
+            url2: "https://github.com/KimJunHo98/project1",
+            url3: "https://github.com/KimJunHo98/project1/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81%20%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf",
+        },
+        {
+            url1: "https://bbatsue-web.vercel.app/",
+            url2: "https://github.com/hejo47/bbatsueWeb",
+            // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
+        },
+        
+    ]
 
     const component = useRef();
     const slider = useRef();
@@ -134,14 +149,18 @@ const Projects = () => {
                             <div className="hor_wrap" ref={slider}>
                                 <div className="hor_item_slide slide1">
                                     <div className="hor_item">
-                                        <h3 className="site_tit">경기생활문화센터</h3>
+                                        <h3 className="site_tit"><span>site. 01-</span>경기생활문화센터</h3>
                                         <div className="hor_item_top">
-                                            <p className="site_desc">
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                            </p>
+                                            <div className="site_desc">
+                                                <p><span>기술 스택:</span>HTML5, CSS3, jQuery, JS</p>
+                                                <p><span>작업 기간:</span>3주</p>
+                                                <p><span>기여도:</span>100%</p>
+                                                <p><span>특징:</span>메인 페이지, 로그인 페이지 / 반응형, 웹표준, 웹접근성을 고려하여 제작 / 날씨 API 사용</p>
+                                            </div>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -151,15 +170,16 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide2">
                                     <div className="hor_item">
-                                        <h3 className="site_tit">site.02</h3>
+                                        <h3 className="site_tit"><span>site.</span> 02-뺏슈</h3>
                                         <div className="hor_item_top">
                                             <p className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
                                             </p>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                {/* <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button> */}
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -169,14 +189,15 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide3">
                                     <div className="hor_item">
-                                        <h3 className="site_tit">site.03</h3>
+                                        <h3 className="site_tit"><span>site.</span> 03</h3>
                                         <div className="hor_item_top">
                                             <p className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
                                             </p>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -186,14 +207,15 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide4">
                                     <div className="hor_item">
-                                        <h3 className="site_tit">site.04</h3>
+                                        <h3 className="site_tit"><span>site.</span> 04</h3>
                                         <div className="hor_item_top">
                                             <p className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
                                             </p>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -203,14 +225,15 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide5">
                                     <div className="hor_item">
-                                        <h3 className="site_tit">site.05</h3>
+                                        <h3 className="site_tit"><span>site.</span> 05</h3>
                                         <div className="hor_item_top">
                                             <p className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
                                             </p>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(url1)}}>Github</button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">

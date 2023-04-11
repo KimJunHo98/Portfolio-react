@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 // font-size
 $fs_1: 1.4rem;
@@ -26,6 +32,7 @@ $fs_11: 12rem;
 // font-family
 $ffN: 'Nanum Myeongjo', serif;
 $ffC: 'Chosunilbo_myungjo', serif;
+$ffPR: 'Pretendard-Regular', serif;
 
 // color
 $background: #ffffff;
