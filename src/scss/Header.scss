@@ -3,10 +3,10 @@
 
 .progress_bar {
     position: fixed;
-    top: 0;
+    top: 68px;
     left: 0;
     height: 5px;
-    z-index: 9999;
+    z-index: 99999;
     background-color: $prim;
 }
 
@@ -18,7 +18,11 @@
     backdrop-filter: blur(10px);
     border-bottom: 2px solid $prim;
     z-index: 999;
+    transition: all .2s ease-in;
 
+    &.active {
+        background-color: rgba(255,255,255,.5);
+    }
     .header {
         width: 100%;
         height: 68px;

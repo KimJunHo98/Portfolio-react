@@ -134,6 +134,7 @@
                             height: 80%;
                             align-self: flex-end;
                             background-size: 130% 100%;
+                            transition: all .2s ease-in;
         
                             &::before {
                                 content: "";
@@ -144,10 +145,8 @@
                                 height: 100%;
                                 background-color:rgba(0,0,0,.02);
                             }
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
+                            &:hover .cursor{
+                                transform: scale(1.1);
                             }
                         }
                     }

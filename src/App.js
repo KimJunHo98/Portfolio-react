@@ -8,8 +8,8 @@ import './scss/Style.scss';
 function App() {
   return (
     <>
+      <Pointer />
       <div id="wrap" className="wrap">
-        <Pointer />
         <Header/>
         <MainPage />
         <Footer />

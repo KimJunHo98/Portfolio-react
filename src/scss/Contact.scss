@@ -3,18 +3,17 @@
 
 #contact {
     width: 100%;
-    background-color: $prim;
     
     .contact {
         width: 100%;
-        height: 100%;
+        height: 100vh;
 
         .contact_title {
             width: 100%;
             height: 100%;
 
             .tit {
-                color: #fff;
+                padding-top: 50px;
                 text-align: center;
                 text-transform: uppercase;
                 @include fontSizeWeight($fs_11, 400);
