@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "../ProgressBar";
 
 const Header = () => {
     const [isHeaderActive, setIsHeaderActive] = useState(false);

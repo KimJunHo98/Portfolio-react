@@ -1,4 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import { useRef, useEffect } from 'react';
+
+// gsap
 import { gsap } from "gsap";
 
 const Pointer = () => {
@@ -38,10 +41,10 @@ const Pointer = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <div ref={pointerRef} className="cursor" />
             <div ref={followerRef} className="cursor_follower" />
-        </div>
+        </>
     );
 };
 
