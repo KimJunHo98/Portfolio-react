@@ -1,6 +1,9 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 
+// aos
+import "aos/dist/aos.css";
+
 // gsap
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -47,24 +50,24 @@ const About = () => {
                                         <p className="slog slog2" ref={gptRef}></p>
                                         <p className="slog slog3" ref={jptRef}></p>
                                     </div>
-                                    <p className="slog slog4" 
+                                    <div className="slog slog4" 
                                         data-aos="fade-left"
                                         data-aos-duration="2000"
                                     >
                                         가 되고싶은
-                                    </p>
-                                    <p className="slog slog5" 
+                                    </div>
+                                    <div className="slog slog5" 
                                         data-aos="fade-left"
                                         data-aos-duration="2000"
                                     >
                                         <span>김준호</span>입니다
-                                    </p>
+                                    </div>
                                 </div>
                                 <div className="profil" 
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >
-                                    {/* <img src="../images/main.png" alt="" /> */}
+                                    {/* <img src="../images/main-profile.png" alt="" /> */}
                                 </div>
                             </div>
                         </div>

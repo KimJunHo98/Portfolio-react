@@ -30,10 +30,10 @@ const Header = () => {
                     <div className="header">
                         <h1 className="main_logo">
                             <AnchorLink href="#wrap">KimJunHo</AnchorLink>
-                            {/* <img src="../images/chatgpt-logo.png" alt="메인로고" /> */}
                         </h1>
                         <nav className="gnb">
                             <ul className="gnb_link_list">
+                                <li className="link_item"><AnchorLink href="#wrap">Home</AnchorLink></li>
                                 <li className="link_item"><AnchorLink href="#about2">ABOUT ME</AnchorLink></li>
                                 <li className="link_item"><AnchorLink href="#skill">SKILLS</AnchorLink></li>
                                 <li className="link_item"><AnchorLink href="#projects">PROJECTS</AnchorLink></li>

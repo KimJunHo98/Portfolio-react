@@ -2,10 +2,10 @@
 @import "./Variable";
 
 .progress_bar {
+    height: 3px;
     position: fixed;
-    top: 68px;
+    top: 70px;
     left: 0;
-    height: 5px;
     z-index: 99999;
     background-color: $prim;
 }

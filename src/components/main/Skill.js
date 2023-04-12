@@ -1,3 +1,8 @@
+import React from "react";
+
+// aos
+import "aos/dist/aos.css";
+
 const Skill = () => {
     return(
         <>

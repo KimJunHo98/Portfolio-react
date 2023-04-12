@@ -1,7 +1,7 @@
 import React from "react";
 import { useLayoutEffect, useRef } from "react";
 
-// fontawsome
+// fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -23,6 +23,11 @@ const Projects = () => {
         {
             url1: "https://bbatsue-web.vercel.app/",
             url2: "https://github.com/hejo47/bbatsueWeb",
+            // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
+        },
+        {
+            url1: "https://anbd.vercel.app/",
+            url2: "https://github.com/2ANBD/ANBD",
             // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
         },
         
@@ -74,8 +79,8 @@ const Projects = () => {
                                             <div className="site_desc">
                                                 <p><span>기술 스택:</span>HTML5, CSS3, jQuery, JS</p>
                                                 <p><span>작업 기간:</span>3주</p>
-                                                <p><span>기여도:</span>100%</p>
-                                                <p><span>특징:</span>메인 페이지, 로그인 페이지 / 반응형, 웹표준, 웹접근성을 고려하여 제작 / 날씨 API 사용</p>
+                                                <p><span>기여도:</span>개인 100%</p>
+                                                <p><span>특징:</span>메인 페이지, 로그인 페이지 / 반응형, 웹표준, 웹접근성을 고려하여 제작 / 날씨 API 사용 / 제이쿼리 라이브러리와 쿠키 데이터 사용하여 드래그 팝업 제작</p>
                                             </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
@@ -92,14 +97,16 @@ const Projects = () => {
                                     <div className="hor_item">
                                         <h3 className="site_tit"><span>site.</span> 02-뺏슈</h3>
                                         <div className="hor_item_top">
-                                            <p className="site_desc">
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                            </p>
+                                            <div className="site_desc">
+                                                <p><span>기술 스택:</span>HTML5, Bootstrap, SCSS, JS, AJAX</p>
+                                                <p><span>작업 기간:</span>2주</p>
+                                                <p><span>기여도:</span>개인 50%, 팀원 50%</p>
+                                                <p><span>특징:</span>메인 페이지, 서브 페이지 4개 / 영양정보 API 사용 / 로컬스토리지를 활용한 로그인 기능 구현 / gitflow방식으로 브랜치를 나눠서 협업</p>
+                                            </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
-                                                {/* <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button> */}
+                                                <button className="site_link_btn"><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -109,15 +116,18 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide3">
                                     <div className="hor_item">
-                                        <h3 className="site_tit"><span>site.</span> 03</h3>
+                                        <h3 className="site_tit"><span>site.</span> 03-ANBD</h3>
                                         <div className="hor_item_top">
-                                            <p className="site_desc">
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                            </p>
+                                            <div className="site_desc">
+                                                <p><span>기술 스택:</span>React, SCSS, Node, sqlLite</p>
+                                                <p><span>작업 기간:</span>3주</p>
+                                                <p><span>기여도:</span>개인 40%, 팀원 60%</p>
+                                                <p><span>특징:</span>메인 페이지, 서브 페이지 5개 / filter함수와 map함수를 활용하여 검색기능 구현, 상품업로드 실시간으로 반영 / 상품등록, 결제기능 구현 / gitflow방식으로 브랜치를 나눠서 협업 / 웹&앱으로 구현</p>
+                                            </div>
                                             <div className="site_btns">
-                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -129,9 +139,9 @@ const Projects = () => {
                                     <div className="hor_item">
                                         <h3 className="site_tit"><span>site.</span> 04</h3>
                                         <div className="hor_item_top">
-                                            <p className="site_desc">
+                                            <div className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                            </p>
+                                            </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
@@ -147,9 +157,9 @@ const Projects = () => {
                                     <div className="hor_item">
                                         <h3 className="site_tit"><span>site.</span> 05</h3>
                                         <div className="hor_item_top">
-                                            <p className="site_desc">
+                                            <div className="site_desc">
                                                 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
-                                            </p>
+                                            </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
