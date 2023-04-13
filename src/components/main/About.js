@@ -23,9 +23,9 @@ const About = () => {
         const tl = gsap.timeline({ repeat: -1 });
 
         tl.to(gpt, { duration: 1.3, text: "GPT", ease: "Linear.easeNone" })
-        .to(gpt, { duration: 1.1, text: "", ease: "Linear.easeNone" })
+        .to(gpt, { duration: 1.3, text: "", ease: "Linear.easeNone" })
         .to(jpt, { duration: 1.3, text: "JPT", ease: "Linear.easeNone" })
-        .to(jpt, { duration: 1.1, text: "", ease: "Linear.easeNone" });
+        .to(jpt, { duration: 1.3, text: "", ease: "Linear.easeNone" });
     }, []);
 
     return(
@@ -54,7 +54,7 @@ const About = () => {
                                         data-aos="fade-left"
                                         data-aos-duration="2000"
                                     >
-                                        가 되고싶은
+                                        <p>가 되고싶은</p>
                                     </div>
                                     <div className="slog slog5" 
                                         data-aos="fade-left"
@@ -67,7 +67,7 @@ const About = () => {
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >
-                                    {/* <img src="../images/main-profile.png" alt="" /> */}
+                                    <img src="../images/main-profile.png" alt="" />
                                 </div>
                             </div>
                         </div>

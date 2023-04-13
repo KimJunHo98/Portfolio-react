@@ -16,8 +16,8 @@ const Contact = () => {
                                 >contact me</h3>
                             </div>
                             <div className="contact_info">
-                                <div class="contact_desc">
-                                    <div class="desc_list_top">
+                                <div className="contact_desc">
+                                    <div className="desc_list_top">
                                         <p className="desc_list1"
                                             data-aos="fade-right"
                                             data-aos-duration="2000"
@@ -31,9 +31,11 @@ const Contact = () => {
                                             개발자가 될 수 있도록 항상 노력하겠습니다!
                                         </p>
                                     </div>
-                                    <div class="desc_list_bottom">
-                                        <p className="tel">Tel: 010-5672-4735</p>
-                                        <p className="email">Email: dydgnscc6845@gmail.com</p>
+                                    <div className="desc_list_bottom">
+                                        <p className="tel" data-aos="fade-right"
+                                            data-aos-duration="2000">Tel: 010-5672-4735</p>
+                                        <p className="email" data-aos="fade-right"
+                                            data-aos-duration="3000">Email: dydgnscc6845@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="sub_profile">

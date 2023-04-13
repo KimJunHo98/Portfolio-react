@@ -60,27 +60,30 @@
                         flex-direction: column;
 
                         .site_desc {
-                            width: 90%;
+                            width: 95%;
                             margin-bottom: 30px;
                             line-height: 1.618;
                             font-family: $ffPR;
                             @include fontSizeWeight($fs_3, 300);
-                            word-break: normal;
+                            word-break: normal;          
 
-                            p span {
-                                width: 100px;
-                                display: inline-block;
-                                @include fontSizeWeight($fs_3, 300);
+                            p {
+                                display: flex;
+                                
+                                span {
+                                    padding-left: 15px;
+                                    @include fontSizeWeight($fs_3, 300);
+                                }
                             }
                         }
                         .site_btns {
                             padding-top: 5px;
 
                             .site_link_btn {
-                                width: 120px;
+                                width: 150px;
                                 position: relative;
                                 padding: 6px 0;
-                                margin-left: 20px;
+                                margin-left: 30px;
                                 color: $prim;
                                 background-color: transparent;
                                 font-family: $ffN;
@@ -154,14 +157,14 @@
             .slide2 {
                 .hor_item_bottom {
                     .img_box {
-                        background: url("../images/site2-pc.jpg") no-repeat center center;
+                        background: url("../images/site3-pc.jpg") no-repeat center center;
                     }
                 }
             }
             .slide3 {
                 .hor_item_bottom {
                     .img_box {
-                        background: url("../images/site3-pc.jpg") no-repeat center center;
+                        background: url("../images/site2-pc.jpg") no-repeat center center;
                     }
                 }
             }
