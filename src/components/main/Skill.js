@@ -1,9 +1,24 @@
 import React from "react";
+import SkillBar from 'react-skillbars';
 
 // aos
 import "aos/dist/aos.css";
 
 const Skill = () => {
+    const skills = [
+        { type: 'html5', level: 100 },
+        { type: 'css3', level: 90 },
+        { type: 'scss', level: 80 },
+        { type: 'javascript', level: 70 },
+        { type: 'jQuery', level: 70 },
+        { type: 'react', level: 70 },
+        // { type: 'REDUX', level: 20 },
+        // { type: 'NODE.JS', level: 0 },
+        // { type: 'NEXT.JS', level: 0 },
+        { type: 'PHTOSHOP', level: 80 },
+        { type: 'FIGMA', level: 80 },
+    ];
+
     return(
         <>
             <section id="skill">
@@ -18,7 +33,7 @@ const Skill = () => {
                             >skills</h2>
                         </div>
                         <div className="skill_marquee">
-                            
+                            <SkillBar skills={skills} />
                         </div>
                     </div>
                 </div>
