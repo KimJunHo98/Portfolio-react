@@ -100,7 +100,7 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
-                                            <div className="img_box img1"></div>
+                                            <div className="img_box"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
-                                            <div className="img_box img1"></div>
+                                            <div className="img_box"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
-                                            <div className="img_box img1"></div>
+                                            <div className="img_box"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -160,7 +160,7 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
-                                            <div className="img_box img1"></div>
+                                            <div className="img_box"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@ const Projects = () => {
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
-                                            <div className="img_box img1"></div>
+                                            <div className="img_box"></div>
                                         </div>
                                     </div>
                                 </div>

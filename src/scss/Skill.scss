@@ -30,27 +30,7 @@
         .skill_marquee {
             width: 70%;
             font-family: $ffN;
-            overflow: hidden;
-            position: relative;
-
-            .marquee_text {
-                width: 100vw;
-                height: calc(100% / 7);
-                border-bottom: 1px solid $prim;
-                @include text(center, uppercase);
-                @include fontSizeWeight($fs_10, 700);
-
-                .marquee_item {
-                    position: absolute;
-                    padding: 2rem 0;
-                    overflow: hidden;
-                    white-space: nowrap;
-
-                    span {
-                        padding-right: 50px;
-                    }
-                }
-            }
+            
         }
     }
 }

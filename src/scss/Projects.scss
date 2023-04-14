@@ -138,10 +138,6 @@
                             background-size: 130% 100%;
                             transition: all .2s ease-in;
                             border: 1px solid #ddd;
-
-                            &:hover .cursor{
-                                transform: scale(1.1);
-                            }
                         }
                     }
                 }
@@ -157,14 +153,16 @@
             .slide2 {
                 .hor_item_bottom {
                     .img_box {
-                        background: url("../images/site3-pc.jpg") no-repeat center center;
+                        background: url("../images/site2-pc.jpg") no-repeat center center;
                     }
                 }
             }
             .slide3 {
                 .hor_item_bottom {
                     .img_box {
-                        background: url("../images/site2-pc.jpg") no-repeat center center;
+                        width: auto;
+                        height: auto;
+                        background: url("../images/site3-pc.jpg") no-repeat center center;
                     }
                 }
             }
