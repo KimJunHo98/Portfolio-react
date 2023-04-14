@@ -15,34 +15,19 @@
   font-family: "Monument";
   src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
 }
-#skill {
+#spec {
   width: 100%;
   height: 50vh;
   border-bottom: 2px solid #2E3828;
 }
-#skill .skill {
+#spec .spec {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  font-family: "Nanum Myeongjo", serif;
 }
-#skill .skill .skill_title {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px;
-  border-left: 2px solid #2E3828;
+#spec .spec .spec_left {
+  width: 50%;
 }
-#skill .skill .skill_title .tit {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12rem;
-  font-weight: 400;
-}
-#skill .skill .skill_list {
-  width: 70%;
-  height: 100%;
-}/*# sourceMappingURL=Skill.css.map */
+#spec .spec .spec_right {
+  width: 50%;
+}/*# sourceMappingURL=Spec.css.map */

@@ -17,14 +17,14 @@ const Pointer = () => {
 
             // 마우스 포인터의 위치 업데이트
             gsap.to(pointer, {
-                x: event.clientX - 15,
-                y: event.clientY - 15,
+                x: event.clientX - 10,
+                y: event.clientY - 10,
                 duration: 0.5,
                 ease: "power2.out"
             });
             gsap.to(follower, {
-                x: event.clientX - 10,
-                y: event.clientY - 10,
+                x: event.clientX - 6,
+                y: event.clientY - 6,
                 duration: .9,
                 ease: "power2.out"
             });

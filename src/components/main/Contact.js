@@ -11,7 +11,7 @@ const Contact = () => {
                             <div className="contact_title">
                                 <h3 className="tit" 
                                     data-aos="fade-down"
-                                    data-aos-duration="2000"
+                                    data-aos-duration="1000"
                                     data-aos-anchor-placement="top-center"
                                 >contact me</h3>
                             </div>

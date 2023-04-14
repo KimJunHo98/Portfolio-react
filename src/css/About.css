@@ -5,12 +5,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
+}
 #about1 {
   width: 100%;
+  height: 90vh;
 }
 #about1 .about1 {
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 #about1 .about1 .about_visual {
   width: 100%;
@@ -21,7 +32,7 @@
 }
 #about1 .about1 .about_slog {
   width: 60%;
-  height: 30%;
+  height: 40%;
   position: relative;
   padding-left: 30px;
 }
@@ -30,14 +41,19 @@
   font-weight: 400;
   font-family: "Chosunilbo_myungjo", serif;
 }
-#about1 .about1 .about_slog .slog2, #about1 .about1 .about_slog .slog3 {
+#about1 .about1 .about_slog .split_slog {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+#about1 .about1 .about_slog .split_slog .slog2, #about1 .about1 .about_slog .split_slog .slog3 {
   position: relative;
   display: inline-block;
   font-size: 9rem;
   font-weight: 700;
   font-family: "Nanum Myeongjo", serif;
 }
-#about1 .about1 .about_slog .slog2::after, #about1 .about1 .about_slog .slog3::after {
+#about1 .about1 .about_slog .split_slog .slog2::after, #about1 .about1 .about_slog .split_slog .slog3::after {
   content: "";
   position: absolute;
   right: -10px;
@@ -57,16 +73,11 @@
     opacity: 1;
   }
 }
-#about1 .about1 .about_slog .slog3 {
-  padding-left: 20px;
-}
 #about1 .about1 .about_slog .slog4 {
-  position: absolute;
-  top: 54%;
-  left: 230px;
+  padding-left: 200px;
 }
-#about1 .about1 .about_slog .slog4 span {
-  border-bottom: 2px solid #333;
+#about1 .about1 .about_slog .slog5 span {
+  border-bottom: 2px solid #2E3828;
 }
 #about1 .about1 .profil {
   width: 40%;
@@ -85,15 +96,16 @@
 
 #about2 {
   width: 100%;
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+  height: 50vh;
+  border-top: 2px solid #2E3828;
+  border-bottom: 2px solid #2E3828;
 }
 #about2 .inner {
   padding-left: 0;
 }
 #about2 .about2 {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -105,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 2px solid #333;
+  border-right: 2px solid #2E3828;
 }
 #about2 .about2 .about_title .tit {
   line-height: 1;
@@ -117,6 +129,13 @@
 #about2 .about_desc {
   padding-left: 50px;
   width: 70%;
+  text-align: justify;
+  letter-spacing: -1px;
   font-size: 3rem;
   font-weight: 400;
+}
+#about2 .about_desc .intro {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2E3828;
 }/*# sourceMappingURL=About.css.map */

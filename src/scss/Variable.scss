@@ -15,6 +15,10 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: "Monument";
+    src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
+}
 
 // font-size
 $fs_1: 1.4rem;
@@ -33,6 +37,7 @@ $fs_11: 12rem;
 $ffN: 'Nanum Myeongjo', serif;
 $ffC: 'Chosunilbo_myungjo', serif;
 $ffPR: 'Pretendard-Regular', serif;
+$ffM: 'Monument', serif;
 
 // color
 $background: #ffffff;

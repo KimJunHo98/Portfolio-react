@@ -3,11 +3,12 @@
 
 #about1 {
     width: 100%;
+    height: 90vh;
 
     .about1 {
         width: 100%;
-        height: 90vh;
-
+        height: 100%;
+        
         .about_visual {
             width: 100%;
             height: 100%;
@@ -86,6 +87,7 @@
 
 #about2 {
     width: 100%;
+    height: 50vh;
     border-top: 2px solid $prim;
     border-bottom: 2px solid $prim;
 
@@ -94,7 +96,7 @@
     }
     .about2 {
         width: 100%;
-        height: 50vh;
+        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -118,6 +120,14 @@
     .about_desc {
         padding-left: 50px;
         width: 70%;
+        text-align: justify;
+        letter-spacing: -1px;
         @include fontSizeWeight($fs_9, 400);
+
+        .intro {
+            display: inline-block;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $prim;
+        }
     }
 }

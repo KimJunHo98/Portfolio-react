@@ -3,11 +3,12 @@
 
 #skill {
     width: 100%;
+    height: 50vh;
     border-bottom: 2px solid $prim;
     
     .skill {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: row-reverse;
         font-family: $ffN;
@@ -27,9 +28,9 @@
             }
         }
 
-        .skill_marquee {
+        .skill_list {
             width: 70%;
-            font-family: $ffN;
+            height: 100%;
             
         }
     }

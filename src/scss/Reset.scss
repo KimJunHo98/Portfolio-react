@@ -3,8 +3,8 @@
 
 /* 여백 초기화 */
 * { margin: 0; padding: 0; box-sizing: border-box; word-break: keep-all; }
-.container { width: 100%; margin: 0 auto; }
-.inner { padding: $inner; }
+.container { width: 100%; height: 100%; margin: 0 auto; }
+.inner { width: 100%; height: 100%; padding: $inner; }
 
 /* 스크롤 초기화 */
 body { overflow-x: hidden; }
