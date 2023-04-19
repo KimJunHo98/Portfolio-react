@@ -32,6 +32,32 @@
             width: 70%;
             height: 100%;
             
+            .skill_progress {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .skill_name {  
+                    width: 22%;
+                    text-transform: uppercase;
+                    @include fontSizeWeight(4rem, 700);
+                }
+                .skill_percentage {
+                    margin-right: 3%;
+                    @include fontSizeWeight(4rem, 700);
+                }
+
+                .progress_bar {
+                    width: 65%;
+                    height: 30px;
+                    background-color: #eee;
+
+                    .progress_bar_fill {
+                        background-color: $prim;
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 }
