@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     const url1 = "https://github.com/KimJunHo98";
-    const url2 = "https://www.notion.so/React-study-note-864d5dffbbfd47c4be4ea9bdabc114cd";
+    const url2 = "https://www.notion.so/My-Blog-f671a512fe944b94a56a80576b5fc731";
 
     return(
         <>
@@ -33,7 +33,7 @@ const Footer = () => {
                                     116.537 118.051 119.701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0
                                     9.5279 1.94945 5.8785 7.5434 5.39404Z"></path>
                                 </svg>
-                                <span>Notion</span>
+                                <span>Blog</span>
                             </button>
                         </div>
                     </div>
