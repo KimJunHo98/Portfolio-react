@@ -1,56 +1,35 @@
-// import React, {useState, useRef} from 'react';
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
-const SkillProgressBar = () => {
-    // const [width, setWidth] = useState(0);
-    // const barFillRef = useRef();
+const SkillProgressBar = (props) => {
+    const [width, setWidth] = useState(0);
+    const progressRef = useRef();
 
-
-    const skills = [
-        {
-            name: "html / css",
-            percentage: 90
-        },
-        {
-            name: "scss",
-            percentage: 90
-        },
-        {
-            name: "jquery",
-            percentage: 70
-        },
-        {
-            name: "javascript",
-            percentage: 70
-        },
-        {
-            name: "react.js",
-            percentage: 80
-        },
-        {
-            name: "node.js",
-            percentage: 60
-        },
-    ]
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = (window.pageYOffset || document.documentElement.scrollTop || window.scrollY) + window.innerHeight / 2;
+            const skillRefoffsetTop = progressRef.current.offsetTop - 2;
+    
+            if(scrollTop >= skillRefoffsetTop){
+                setWidth(props.skill.percentage);
+            }else{
+                setWidth(0);
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [props.skill.percentage]);
 
     return (
-        <div className="skill_list" >
-            {skills.map((skill) => {
-                return (
-                    <div className="skill_progress"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        key={skill.name}
-                    >
-                        <p className="skill_name">{skill.name}</p>
-                        <div className="progress_bar">
-                            {/* <div className="progress_bar_fill" ref={barFillRef} onChage={onChange} style={{width: `${width}%`}}></div>  */}
-                            <div className="progress_bar_fill" style={{width: `${skill.percentage}%`}}></div> 
-                        </div>
-                        <p className="skill_percentage">{`${skill.percentage}%`}</p>
-                    </div>
-                );
-            })}
+        <div className="skill_progress" ref={progressRef} key={props.skill.name}>
+            <p className="skill_name">{props.skill.name}</p>
+            <div className="progress_bar">
+                <div className="progress_bar_fill" style={{width: `${width}%`}}></div> 
+            </div>
+            <p className="skill_percentage">{`${props.skill.percentage}%`}</p>
         </div>
     );
 };

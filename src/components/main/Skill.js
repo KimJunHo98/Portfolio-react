@@ -5,6 +5,34 @@ import SkillProgressBar from '../SkillProgressBar';
 import "aos/dist/aos.css";
 
 const Skill = () => {
+
+    const skills = [
+        {
+            name: "html / css",
+            percentage: 90
+        },
+        {
+            name: "scss",
+            percentage: 90
+        },
+        {
+            name: "jquery",
+            percentage: 70
+        },
+        {
+            name: "javascript",
+            percentage: 70
+        },
+        {
+            name: "react.js",
+            percentage: 80
+        },
+        {
+            name: "node.js",
+            percentage: 60
+        },
+    ]
+
     return(
         <>
             <section id="skill">
@@ -19,7 +47,13 @@ const Skill = () => {
                                     // data-aos-anchor-placement="center-center"
                                 >skills</h2>
                             </div>
-                            <SkillProgressBar />
+                            <div className="skill_list">
+                                {skills.map((skill) => {
+                                    return (
+                                        <SkillProgressBar skill={skill} />
+                                    );
+                                })};
+                            </div>
                         </div>
                     </div>
                 </div>
