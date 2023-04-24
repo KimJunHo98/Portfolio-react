@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const SkillProgressBar = (props) => {
+const SkillProgressBar = ({skill}) => {
     const [width, setWidth] = useState(0);
     const progressRef = useRef();
 
@@ -10,7 +10,7 @@ const SkillProgressBar = (props) => {
             const skillRefoffsetTop = progressRef.current.offsetTop - 2;
     
             if(scrollTop >= skillRefoffsetTop){
-                setWidth(props.skill.percentage);
+                setWidth(skill.percentage);
             }else{
                 setWidth(0);
             }
@@ -21,15 +21,15 @@ const SkillProgressBar = (props) => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [props.skill.percentage]);
+    }, [skill.percentage]);
 
     return (
         <div className="skill_progress" ref={progressRef}>
-            <p className="skill_name">{props.skill.name}</p>
+            <p className="skill_name">{skill.name}</p>
             <div className="progress_bar">
                 <div className="progress_bar_fill" style={{width: `${width}%`}}></div> 
             </div>
-            <p className="skill_percentage">{`${props.skill.percentage}%`}</p>
+            <p className="skill_percentage">{`${skill.percentage}%`}</p>
         </div>
     );
 };
