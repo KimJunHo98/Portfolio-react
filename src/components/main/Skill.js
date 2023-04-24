@@ -50,7 +50,7 @@ const Skill = () => {
                             <div className="skill_list">
                                 {skills.map((skill) => {
                                     return (
-                                        <SkillProgressBar skill={skill} />
+                                        <SkillProgressBar skill={skill} key={skill.name + skill.percentage} />
                                     );
                                 })};
                             </div>

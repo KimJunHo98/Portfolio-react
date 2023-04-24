@@ -24,7 +24,7 @@ const SkillProgressBar = (props) => {
     }, [props.skill.percentage]);
 
     return (
-        <div className="skill_progress" ref={progressRef} key={props.skill.name}>
+        <div className="skill_progress" ref={progressRef}>
             <p className="skill_name">{props.skill.name}</p>
             <div className="progress_bar">
                 <div className="progress_bar_fill" style={{width: `${width}%`}}></div> 
