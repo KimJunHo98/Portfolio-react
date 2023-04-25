@@ -67,7 +67,7 @@ const About = () => {
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >
-                                    <img src="../images/main-profile.png" alt="" />
+                                    {/* <img src="../images/main-profile.png" alt="" /> */}
                                 </div>
                             </div>
                         </div>

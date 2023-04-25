@@ -52,7 +52,7 @@ const Skill = () => {
                                     return (
                                         <SkillProgressBar skill={skill} key={skill.name + skill.percentage} />
                                     );
-                                })};
+                                })}
                             </div>
                         </div>
                     </div>

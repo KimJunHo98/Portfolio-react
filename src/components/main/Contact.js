@@ -40,7 +40,8 @@ const Contact = () => {
                                 </div>
                                 <div className="sub_profile">
                                     <div className="img_box">
-                                        <img src="../images/main-profile.png" alt="" />
+                                        {/* <img src="../images/main-profile.png" alt="" /> */}
+                                        <img src="" alt="" />
                                     </div>
                                 </div>
                             </div>
