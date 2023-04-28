@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 // aos
 import "aos/dist/aos.css";
@@ -63,7 +62,7 @@ const About = () => {
                                         <span>김준호</span>입니다
                                     </div>
                                 </div>
-                                <div className="profil" 
+                                <div className="profile" 
                                     data-aos="fade-left"
                                     data-aos-duration="1000"
                                 >

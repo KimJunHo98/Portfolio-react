@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from "react";
 
 // gsap
 import { gsap } from "gsap";
@@ -14,7 +13,6 @@ const Pointer = () => {
 
         // 마우스 움직임 감지
         const onMouseMove = (event) => {
-
             // 마우스 포인터의 위치 업데이트
             gsap.to(pointer, {
                 x: event.clientX - 10,

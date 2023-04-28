@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

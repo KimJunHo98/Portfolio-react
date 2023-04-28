@@ -5,29 +5,29 @@ import SkillProgressBar from '../SkillProgressBar';
 import "aos/dist/aos.css";
 
 const Skill = () => {
-
     const skills = [
         {
+            id: 0,
             name: "html / css",
             percentage: 90
         },
-        {
+        {   id: 1,
             name: "scss",
             percentage: 90
         },
-        {
+        {   id: 2,
             name: "jquery",
             percentage: 70
         },
-        {
+        {   id: 3,
             name: "javascript",
             percentage: 70
         },
-        {
+        {   id: 4,
             name: "react.js",
             percentage: 80
         },
-        {
+        {   id: 5,
             name: "node.js",
             percentage: 60
         },
@@ -50,7 +50,7 @@ const Skill = () => {
                             <div className="skill_list">
                                 {skills.map((skill) => {
                                     return (
-                                        <SkillProgressBar skill={skill} key={skill.name + skill.percentage} />
+                                        <SkillProgressBar skill={skill} key={skill.id} />
                                     );
                                 })}
                             </div>
