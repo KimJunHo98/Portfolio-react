@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "./Variable";
+
+#spec {
+    width: 100%;
+    height: 50vh;
+    border-bottom: 2px solid $prim;
+
+    .spec {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .spec_profile {
+            width: 50%;
+            height: 100%;
+
+            .img_box {
+                width: 300px;
+                height: 400px;
+                margin: 27px auto 0;
+                box-shadow: 0 0 15px rgba(0,0,0,.3);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background-color: #ccc;
+                }
+            }
+        }
+        .my_education {
+            width: 50%;
+            height: 100%;
+            padding-top: 27px;
+
+            .education {
+                margin-bottom: 20px;
+                color: $acc;
+                font-family: $ffC;
+                @include fontSizeWeight(4.5rem, 700);
+            }
+            & div {
+                margin-bottom: 20px;
+                font-family: $ffPR;
+
+                .tit {
+                    @include fontSizeWeight($fs_4, 400);
+                }
+                .date {
+                    @include fontSizeWeight($fs_3, 400);
+                }
+            }
+        }
+    }
+}

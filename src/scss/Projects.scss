@@ -17,6 +17,7 @@
 
             .tit {
                 padding: 30px 0;
+                color: $acc;
                 @include text(center, uppercase);
                 @include fontSizeWeight($fs_11, 400);
             }

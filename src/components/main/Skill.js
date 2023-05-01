@@ -8,28 +8,36 @@ const Skill = () => {
     const skills = [
         {
             id: 0,
-            name: "html / css",
+            name: "HTML / CSS",
             percentage: 90
         },
         {   id: 1,
-            name: "scss",
+            name: "Scss",
             percentage: 90
         },
         {   id: 2,
-            name: "jquery",
+            name: "jQuery",
             percentage: 70
         },
         {   id: 3,
-            name: "javascript",
+            name: "JavaScript",
             percentage: 70
         },
         {   id: 4,
-            name: "react.js",
+            name: "React.js",
             percentage: 80
         },
         {   id: 5,
-            name: "node.js",
+            name: "Node.js",
             percentage: 60
+        },
+        {   id: 6,
+            name: "Photoshop",
+            percentage: 80
+        },
+        {   id: 7,
+            name: "figma",
+            percentage: 80
         },
     ]
 

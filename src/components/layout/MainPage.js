@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import About from "../main/About";
+import Spec from "../main/Spec";
 import Skill from "../main/Skill";
 import Projects from "../main/Projects";
 import Contact from "../main/Contact";
@@ -25,6 +26,7 @@ const MainPage = () => {
         <>  
             <main> 
                 <About />
+                <Spec />
                 <Skill />
                 <Projects />
                 <Contact />

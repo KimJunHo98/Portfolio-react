@@ -112,6 +112,7 @@
 
             .tit {
                 line-height: 1;
+                color: $acc;
                 @include text(center, uppercase);
                 @include fontSizeWeight($fs_11, 400);
             }
