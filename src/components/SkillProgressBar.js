@@ -1,37 +1,36 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 
-const SkillProgressBar = ({skill}) => {
+const SkillProgressBar = forwardRef(({ skill }, ref) => {
     const [width, setWidth] = useState(0);
-    const progressRef = useRef();
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = (window.pageYOffset || document.documentElement.scrollTop || window.scrollY) + window.innerHeight / 2;
-            const skillRefoffsetTop = progressRef.current.offsetTop - 2;
-    
-            if(scrollTop >= skillRefoffsetTop){
+            const skillRefOffsetTop = ref.current.offsetTop - 2;
+
+            if (scrollTop >= skillRefOffsetTop) {
                 setWidth(skill.percentage);
-            }else{
+            } else {
                 setWidth(0);
             }
         };
-    
+
         window.addEventListener('scroll', handleScroll);
-    
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [skill.percentage]);
+    }, [skill.percentage, ref]);
 
     return (
-        <div className="skill_progress" ref={progressRef}>
+        <div className="skill_progress">
             <p className="skill_name">{skill.name}</p>
             <div className="progress_bar">
-                <div className="progress_bar_fill" style={{width: `${width}%`}}></div> 
+                <div className="progress_bar_fill" style={{ width: `${width}%` }}></div>
             </div>
             <p className="skill_percentage">{`${skill.percentage}%`}</p>
         </div>
     );
-};
+});
 
 export default SkillProgressBar;

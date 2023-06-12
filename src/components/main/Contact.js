@@ -22,7 +22,7 @@ const Contact = () => {
                                             data-aos="fade-right"
                                             data-aos-duration="2000"
                                         >
-                                            배움을 즐기고 소통을 할 수 있는
+                                            동료와 잘 어울리고 소통을 할 수 있는
                                         </p>
                                         <p className="desc_list2"
                                             data-aos="fade-right"

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import SkillProgressBar from '../SkillProgressBar';
 
 // aos
 import "aos/dist/aos.css";
 
 const Skill = () => {
+    const skillRef = useRef(null);
     const skills = [
         {
             id: 0,
@@ -17,7 +18,7 @@ const Skill = () => {
         },
         {   id: 2,
             name: "jQuery",
-            percentage: 70
+            percentage: 75
         },
         {   id: 3,
             name: "JavaScript",
@@ -49,18 +50,19 @@ const Skill = () => {
                     <div className="inner">
                         <div className="skill">
                             <div className="skill_title">
-                                <h2 className="tit"
+                                <h2
+                                    className="tit"
                                     data-aos="fade-down"
                                     data-aos-duration="1000"
                                     // data-aos-anchor-placement="center-center"
-                                >skills</h2>
+                                >
+                                    skills
+                                </h2>
                             </div>
-                            <div className="skill_list">
-                                {skills.map((skill) => {
-                                    return (
-                                        <SkillProgressBar skill={skill} key={skill.id} />
-                                    );
-                                })}
+                            <div className="skill_list" ref={skillRef}>
+                                {skills.map((skill) => (
+                                    <SkillProgressBar skill={skill} ref={skillRef} key={skill.id} />
+                                ))}
                             </div>
                         </div>
                     </div>
