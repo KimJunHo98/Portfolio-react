@@ -26,7 +26,7 @@ const Pointer = () => {
                 duration: .9,
                 ease: "power2.out"
             });
-        };
+        };;
         document.addEventListener("mousemove", onMouseMove);
 
         return () => {
