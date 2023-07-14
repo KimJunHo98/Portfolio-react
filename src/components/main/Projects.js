@@ -29,6 +29,10 @@ const Projects = () => {
             url2: "https://github.com/2ANBD/ANBD",
             // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
         },
+        {
+            url1: "https://kimjunho98.github.io/twit/",
+            url2: "https://github.com/KimJunHo98/twit",
+        },
         
     ]
     const btnName = [
@@ -108,7 +112,7 @@ const Projects = () => {
                                         <h3 className="site_tit"><span>site.</span> 02-ANBD</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
-                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, SCSS, Node.js, sqlLite</span></p>
+                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, SCSS, Node.js, sqlLite</span></p>
                                                 <p>작업&nbsp;&nbsp;&nbsp;기간:<span>3주</span></p>
                                                 <p>본인기여도:<span>개인 25%</span></p>
                                                 <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 5개 / filter함수와 map함수를 활용하여 검색기능 구현, 상품업로드 실시간으로 반영 / 상품등록, 결제기능 구현 / gitflow방식으로 브랜치를 나눠서 협업 / 웹&앱으로 구현</span></p>
@@ -147,15 +151,17 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide4">
                                     <div className="hor_item">
-                                        <h3 className="site_tit"><span>site.</span> 04</h3>
+                                        <h3 className="site_tit"><span>site.</span> Post</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, CSS, HTML, firebase</span></p>
+                                                <p>작업&nbsp;&nbsp;&nbsp;기간:<span>3주</span></p>
+                                                <p>본인기여도:<span>개인 100%</span></p>
+                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 2개 / firebase를 사용한 CRUD기능 구현</span></p>
                                             </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
