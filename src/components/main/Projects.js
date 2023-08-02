@@ -157,7 +157,7 @@ const Projects = () => {
                                                 <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, CSS, HTML, firebase</span></p>
                                                 <p>작업&nbsp;&nbsp;&nbsp;기간:<span>3주</span></p>
                                                 <p>본인기여도:<span>개인 100%</span></p>
-                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 2개 / firebase를 사용한 CRUD기능 구현</span></p>
+                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 2개 / firebase를 사용한 실시간 CRUD기능 구현</span></p>
                                             </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[3].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
