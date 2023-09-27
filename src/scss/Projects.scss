@@ -137,7 +137,6 @@
                             height: 80%;
                             align-self: flex-end;
                             background-size: 130% 100%;
-                            transition: all .2s ease-in;
                             border: 1px solid #ddd;
                         }
                     }
@@ -173,6 +172,15 @@
                         width: auto;
                         height: auto;
                         background: url("../images/site4-pc.jpg") no-repeat center center;
+                    }
+                }
+            }
+            .slide5 {
+                .hor_item_bottom {
+                    .img_box {
+                        width: auto;
+                        height: auto;
+                        background: url("../images/site5-pc.jpg") no-repeat center center;
                     }
                 }
             }

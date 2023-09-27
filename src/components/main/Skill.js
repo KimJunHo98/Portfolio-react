@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 const Skill = () => {
     const skillRef = useRef(null);
+    
     const skills = [
         {
             id: 0,
@@ -40,7 +41,7 @@ const Skill = () => {
             name: "figma",
             percentage: 80
         },
-    ]
+    ];
 
     return(
         <>

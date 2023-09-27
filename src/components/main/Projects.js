@@ -13,6 +13,9 @@ import { TextPlugin } from "gsap/TextPlugin";
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const Projects = () => {
+    const component = useRef();
+    const slider = useRef();
+
     const btnLink = [
         {
             url1: "https://kimjunho98.github.io/project1/",
@@ -22,19 +25,22 @@ const Projects = () => {
         {
             url1: "https://anbd.vercel.app/",
             url2: "https://github.com/2ANBD/ANBD",
-            // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
         },
         {
             url1: "https://bbatsue-web.vercel.app/",
             url2: "https://github.com/hejo47/bbatsueWeb",
-            // url3: "file:///C:/Users/Administrator/Downloads/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_0203%EC%A0%9C%EC%B6%9C.pdf",
         },
         {
             url1: "https://kimjunho98.github.io/twit/",
             url2: "https://github.com/KimJunHo98/twit",
         },
+        {
+            url1: "https://movie-app-liart-chi.vercel.app/",
+            url2: "https://github.com/KimJunHo98/movie-app",
+        },
         
-    ]
+    ];
+
     const btnName = [
         {
             name: "Site"
@@ -45,10 +51,7 @@ const Projects = () => {
         {
             name: "Proposal"
         }
-    ]
-
-    const component = useRef();
-    const slider = useRef();
+    ];
 
     useEffect(() => {
         let ctx = gsap.context(() => {
@@ -68,6 +71,7 @@ const Projects = () => {
                 }
             });
         }, component);
+        
         return () => ctx.revert();
     },[]);
 
@@ -88,7 +92,7 @@ const Projects = () => {
                             <div className="hor_wrap" ref={slider}>
                                 <div className="hor_item_slide slide1">
                                     <div className="hor_item">
-                                        <h3 className="site_tit"><span>site. 01-</span>경기생활문화센터</h3>
+                                        <h3 className="site_tit"><span>site.</span> 01-경기생활문화센터</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
                                                 <p>기술&nbsp;&nbsp;&nbsp;스택:<span>HTML5, CSS3, jQuery, JS</span></p>
@@ -118,9 +122,8 @@ const Projects = () => {
                                                 <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 5개 / filter함수와 map함수를 활용하여 검색기능 구현, 상품업로드 실시간으로 반영 / 상품등록, 결제기능 구현 / gitflow방식으로 브랜치를 나눠서 협업 / 웹&앱으로 구현</span></p>
                                             </div>
                                             <div className="site_btns">
-                                            <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url1)}}><FontAwesomeIcon icon={faLink} /><span>{btnName[0].name}</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url1)}}><FontAwesomeIcon icon={faLink} /><span>{btnName[0].name}</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url2)}}><FontAwesomeIcon icon={faGithub} /><span>{btnName[1].name}</span></button>
-                                                {/* <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>{btnName[2].name}</span></button> */}
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -129,19 +132,18 @@ const Projects = () => {
                                     </div>
                                 </div>
                                 <div className="hor_item_slide slide3">
-                                <div className="hor_item">
-                                        <h3 className="site_tit"><span>site.</span> 03-뺏슈</h3>
+                                    <div className="hor_item">
+                                        <h3 className="site_tit"><span>site.</span> 03-뺏슈 베이커리</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
-                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>HTML5, Bootstrap, SCSS, JS, AJAX</span></p>
+                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>HTML5, Bootstrap, SCSS, JS</span></p>
                                                 <p>작업&nbsp;&nbsp;&nbsp;기간:<span>2주</span></p>
                                                 <p>본인기여도:<span>개인 30%</span></p>
                                                 <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 4개 / 영양정보 API 사용 / 로컬스토리지를 활용한 로그인 기능 구현 / gitflow방식으로 브랜치를 나눠서 협업</span></p>
                                             </div>
                                             <div className="site_btns">
-                                            <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url1)}}><FontAwesomeIcon icon={faLink} /><span>{btnName[0].name}</span></button>
+                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url1)}}><FontAwesomeIcon icon={faLink} /><span>{btnName[0].name}</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[2].url2)}}><FontAwesomeIcon icon={faGithub} /><span>{btnName[1].name}</span></button>
-                                                {/* <button className="site_link_btn" onClick={()=>{window.open(btnLink[1].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>{btnName[2].name}</span></button> */}
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
@@ -151,13 +153,13 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide4">
                                     <div className="hor_item">
-                                        <h3 className="site_tit"><span>site.</span> Post</h3>
+                                        <h3 className="site_tit"><span>site.</span> 04-Post</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
-                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, CSS, HTML, firebase</span></p>
+                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, CSS, HTML, firebase, vercel</span></p>
                                                 <p>작업&nbsp;&nbsp;&nbsp;기간:<span>3주</span></p>
                                                 <p>본인기여도:<span>개인 100%</span></p>
-                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 2개 / firebase를 사용한 실시간 CRUD기능 구현</span></p>
+                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 서브 페이지 2개 / firebase를 사용한 실시간 CRUD기능 구현 / vercel 배포</span></p>
                                             </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[3].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
@@ -171,15 +173,17 @@ const Projects = () => {
                                 </div>
                                 <div className="hor_item_slide slide5">
                                     <div className="hor_item">
-                                        <h3 className="site_tit"><span>site.</span> 05</h3>
+                                        <h3 className="site_tit"><span>site.</span> 05-movie app</h3>
                                         <div className="hor_item_top">
                                             <div className="site_desc">
-                                                사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명 사이트 설명
+                                                <p>기술&nbsp;&nbsp;&nbsp;스택:<span>React.js, JS, CSS, HTML</span></p>
+                                                <p>작업&nbsp;&nbsp;&nbsp;기간:<span>3주</span></p>
+                                                <p>본인기여도:<span>개인 100%</span></p>
+                                                <p>구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;현:<span>메인 페이지, 디테일 페이지 / open API 사용 / filter, map 함수를 사용하여 검색기능, 영화정보를 보여주고 API를 동적으로 사용하여 더보기 기능 구현 / router 기능 사용 / vercel 배포</span></p>
                                             </div>
                                             <div className="site_btns">
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url1)}}><FontAwesomeIcon icon={faLink} /><span>Site</span></button>
                                                 <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url2)}}><FontAwesomeIcon icon={faGithub} /><span>Github</span></button>
-                                                <button className="site_link_btn" onClick={()=>{window.open(btnLink[0].url3)}}><FontAwesomeIcon icon={faFilePdf} /><span>proposal</span></button>
                                             </div>
                                         </div>
                                         <div className="hor_item_bottom">
