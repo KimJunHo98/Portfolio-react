@@ -57,7 +57,7 @@ const Footer = () => {
                                     9.5279 1.94945 5.8785 7.5434 5.39404Z"
                   ></path>
                 </svg>
-                <span>Blog</span>
+                <span>Notion</span>
               </button>
             </div>
           </div>
