@@ -14,8 +14,8 @@ const Skill = () => {
             percentage: 90
         },
         {   id: 1,
-            name: "Scss",
-            percentage: 90
+            name: "SCSS",
+            percentage: 80
         },
         {   id: 2,
             name: "jQuery",
@@ -26,11 +26,11 @@ const Skill = () => {
             percentage: 70
         },
         {   id: 4,
-            name: "React.js",
-            percentage: 80
+            name: "React",
+            percentage: 70
         },
         {   id: 5,
-            name: "Node.js",
+            name: "Node",
             percentage: 60
         },
         {   id: 6,
@@ -38,7 +38,7 @@ const Skill = () => {
             percentage: 80
         },
         {   id: 7,
-            name: "figma",
+            name: "Figma",
             percentage: 80
         },
     ];
@@ -55,7 +55,6 @@ const Skill = () => {
                                     className="tit"
                                     data-aos="fade-down"
                                     data-aos-duration="1000"
-                                    // data-aos-anchor-placement="center-center"
                                 >
                                     skills
                                 </h2>
