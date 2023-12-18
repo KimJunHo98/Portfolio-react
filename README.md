@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 포트폴리오 사이트 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+리액트를 사용하여 제작한 포트폴리오 사이트입니다. 공부를 하며 제작한 사이트들을 리액트와 여러가지 라이브러리를 사용해
+포트폴리오 사이트로 제작하여 리액트에 대한 이해도를 높이기 위한 베타버전의 포트폴리오 사이트입니다. 
+next를 사용하여 제작 할 포트폴리오 사이트와 컨셉을 다르게 하여 제작했습니다.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 완성작 보기 
+미리보기 : [https://portfolio-site-kimjunho98.vercel.app/]
 
-### `npm start`
+## 사용 스택
+- gsap을 이용하여 가로스크롤 효과와 포인터 효과를 줍니다.
+- aos를 이용하여 스크롤이벤트 효과를 구현합니다.
+- lodash를 이용하여 스므스 효과를 구현합니다.
+- react-anchor-link-smooth-scroll를 이용하여 페이지네이션 효과를 구현합니다.
+- vercel을 통해 사이트를 배포합니다.
+- github를 사용하여 파일을 관리합니다.
+- HTML, CSS(SASS) 기반으로 웹사이트의 기본 레이아웃 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업합니다. [ARIA(Accessible Rich Internet Applications)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 프로젝트 실행
+- react를 설치합니다. `npx create-react-app 프로젝트이름`
+- react-router-dom을 설치합니다. `npm install react-router-dom`
+- ≈ 설치합니다. `npm install react-anchor-link-smooth-scroll`
+- sass를 설치합니다. `npm install sass`
+- gsap를 설치합니다. `npm install gsap`
+- lenis를 설치합니다. `npm install lodash`
+- aos를 설치합니다. `npm install aos`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
